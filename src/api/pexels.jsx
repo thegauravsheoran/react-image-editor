@@ -1,7 +1,7 @@
-const API_KEY = 'Skeh3kyuqByWjLbe3sq0MwCgTQpmthqCpZ7WHCvqdY7drY4jlz8l5a8U';
 const BASE_URL = 'https://api.pexels.com/v1/search?per_page=12&query=';
 
 export const getImages = async (query) => {
+  const API_KEY = import.meta.env.VITE_PEXELS_API_KEY;
   try {
     if (!query || query.trim() === '') {
       throw new Error('Search query cannot be empty.');
