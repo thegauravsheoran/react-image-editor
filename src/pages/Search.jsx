@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { getImages } from '../api/pexels';
 import ImageResults from '../components/ImageResults';
-import './Search.css';
+import '../styles/Search.css';
 
 const Search = () => {
   const [query, setQuery] = useState('');

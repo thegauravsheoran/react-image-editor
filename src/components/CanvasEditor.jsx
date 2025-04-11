@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import * as Fabric from 'fabric';
-import './CanvasEditor.css';
+import '../styles/CanvasEditor.css';
 
 const CanvasEditor = ({ image }) => {
   const [canvas, setCanvas] = useState(null);
