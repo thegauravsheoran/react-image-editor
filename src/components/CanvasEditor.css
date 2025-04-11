@@ -1,0 +1,92 @@
+.editor-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    gap: 30px;
+}
+
+.canvas-area {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.canvas-element {
+    border: 1px solid #ccc;
+}
+
+.tools-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.tool-btn,
+.download-btn {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.download-btn {
+    margin-top: auto;
+    background-color: #007bff;
+    color: white;
+    border: none;
+}
+
+.color-palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.color-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.2s ease;
+}
+
+.color-btn:hover {
+    border: 2px solid #000;
+}
+.color-btn.selected {
+  border: 2px solid #000;
+}
+
+.caption-area {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.caption-area input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.caption-area button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.caption-area button:hover {
+  background-color: #0056b3;
+}
